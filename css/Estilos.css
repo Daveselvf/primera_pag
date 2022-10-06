@@ -1,8 +1,12 @@
+/* Importante el uso del DOM: Es posible mover los items en una pagina 
+o crear efectos CSS-sin siquiera tener que cargar el sitio */
+
+
 .Principal {
-        color: red;
+	color: red;
 }
 
 #Principals:hover {
 
-        color: blue;
+	color: blue;
 }
