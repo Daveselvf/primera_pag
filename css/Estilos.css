@@ -1,12 +1,19 @@
 /* Importante el uso del DOM: Es posible mover los items en una pagina 
 o crear efectos CSS-sin siquiera tener que cargar el sitio */
 
-
+/*Selectores en CSS*/
 .Principal {
 	color: red;
 }
 
+/*Selector por ID y pseudoclase esta ultima activa un evento*/
+
 #Principals:hover {
 
 	color: blue;
+}
+
+.Form__contacto-form__input--sandybrown {
+
+             color: sandybrown;
 }
