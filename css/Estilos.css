@@ -1,6 +1,14 @@
 /* Importante el uso del DOM: Es posible mover los items en una pagina 
 o crear efectos CSS-sin siquiera tener que cargar el sitio */
 
+/** {
+
+
+	padding: 0px;
+	margin: 0px;
+}
+
+*/
 /*Selectores en CSS*/
 .Principal {
 	color: red;
@@ -16,4 +24,23 @@ o crear efectos CSS-sin siquiera tener que cargar el sitio */
 .Form__contacto-form__input--sandybrown {
 
              color: sandybrown;
+             font-size: 1.5em;
 }
+
+/*Uso de medidas relativas modificando por defecto el valor del contenedor 
+para usar em (Tamaño de la fuente)*/
+
+.Form__contacto-form__input {
+ 
+	         font-size: 15px;
+	         background-color: #0000ff;
+	         width: 50vw;
+	         height: 25vh;
+}
+
+div h3 {
+
+	display: inline;
+
+}
+
