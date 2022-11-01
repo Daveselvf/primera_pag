@@ -7,9 +7,9 @@ const obtenerInformacion = (materia)=>{
 
 	}
 	if (materias[materia] !== undefined) {
-		return [materias[materia],materia];
+		return [materias[materia],materia,materias];
 	}else{
-		return false;
+		return materias;
 	}
 
 }
@@ -30,7 +30,28 @@ const mostrarInformacion = (materia)=>{
 }
 }
 
+
+const cantidadDeClases = (alumno)=>{
+	let informacion = obtenerInformacion();
+	let cantidadTotal = 0;
+	let clasesPresentes=[];
+	for(info in informacion){
+		//document.write(info);
+		if (informacion[info].includes(alumno)) {
+			cantidadTotal++;
+			clasesPresentes.push(" "+ info);
+		}
+	}
+	return `<b style='color:blue'>${alumno}</b> esta en <b>${cantidadTotal} clases: </b>
+    <b style='color:green' >${clasesPresentes}</b><br>
+
+	`;
+}
+
 mostrarInformacion("fisica");
 mostrarInformacion("programacion");
 mostrarInformacion("logica");
 mostrarInformacion("quimica");
+
+document.write(cantidadDeClases("pedro"));
+document.write(cantidadDeClases("cofla"));
